@@ -256,7 +256,7 @@ nav h1 {
 
 .course-curriculum {
     margin-top: 5%;
-    max-width: 90%;
+    width: 90%;
     max-height: 100%;
     margin-left: 5%;
     padding: 10%;
@@ -442,7 +442,7 @@ nav h1 {
 
 .faq-section {
     margin-top: 5%;
-    max-width: 90%;
+    width: 90%;
     margin-left: 5%;
     padding: 10% 10% 5% 10%;
     display: grid;
@@ -456,7 +456,7 @@ nav h1 {
 
 .faq-section .card-content {
     position: relative;
-    max-width: 100%;    
+    width: 100%;    
     display: inline-flex;
     justify-content: space-between;
     z-index: 1;
@@ -475,18 +475,24 @@ nav h1 {
     transition: all 0.15s ease-in-out;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 1200px) {
+    body {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 992px) {
 
 }
 
-@media (max-height: 500px) {
+@media screen and (max-width: 767px) {
 
 }
 
-@media (min-width: 767px) {
+@media screen and (max-width: 375px) {
 
 }
 
-@media (min-height: 500px) {
+@media screen and (max-width: 375px) {
 
 }

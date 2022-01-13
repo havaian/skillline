@@ -51,8 +51,8 @@ nav h1 {
 
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 10px );
-    -webkit-backdrop-filter: blur( 10px );
+    backdrop-filter: blur( 10px ) opacity(0);
+    -webkit-backdrop-filter: blur( 10px ) opacity(0.1);
     border-radius: 25px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
@@ -84,8 +84,8 @@ nav h1 {
 
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 10px );
-    -webkit-backdrop-filter: blur( 10px );
+    backdrop-filter: blur( 10px ) opacity(0.1);
+    -webkit-backdrop-filter: blur( 10px ) opacity(0.1);
     border-radius: 25px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
@@ -120,8 +120,8 @@ nav h1 {
 
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 10px );
-    -webkit-backdrop-filter: blur( 10px );
+    backdrop-filter: blur( 10px ) opacity(0.1);
+    -webkit-backdrop-filter: blur( 10px ) opacity(0.1);
     border-radius: 25px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
@@ -142,8 +142,8 @@ nav h1 {
 
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 10px );
-    -webkit-backdrop-filter: blur( 10px );
+    backdrop-filter: blur( 10px ) opacity(0.1);
+    -webkit-backdrop-filter: blur( 10px ) opacity(0.1);
     border-radius: 25px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
@@ -190,8 +190,8 @@ nav h1 {
 
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 10px );
-    -webkit-backdrop-filter: blur( 10px );
+    backdrop-filter: blur( 10px ) opacity(0.1);
+    -webkit-backdrop-filter: blur( 10px ) opacity(0.1);
     border-radius: 25px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
@@ -256,8 +256,8 @@ nav h1 {
 
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 10px );
-    -webkit-backdrop-filter: blur( 10px );
+    backdrop-filter: blur( 10px ) opacity(0.1);
+    -webkit-backdrop-filter: blur( 10px ) opacity(0.1);
     border-radius: 25px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
@@ -291,7 +291,6 @@ nav h1 {
     margin-right: 5%;
     max-height: 450px;
     border-radius: 25px;
-    border-radius: 25px;
 }
 
 .learning-process .card .img-reverse {
@@ -308,8 +307,8 @@ nav h1 {
 
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 10px );
-    -webkit-backdrop-filter: blur( 10px );
+    backdrop-filter: blur( 10px ) opacity(0.1);
+    -webkit-backdrop-filter: blur( 10px ) opacity(0.1);
     border-radius: 25px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
@@ -434,6 +433,7 @@ nav h1 {
 .projects .card {
     max-height: 600px;
     margin-top: 5%;
+    padding: 5%;
 }
 
 .projects .card:nth-of-type(1) {
@@ -450,8 +450,8 @@ nav h1 {
 
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 10px );
-    -webkit-backdrop-filter: blur( 10px );
+    backdrop-filter: blur( 10px ) opacity(0.1);
+    -webkit-backdrop-filter: blur( 10px ) opacity(0.1);
     border-radius: 25px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
@@ -485,7 +485,6 @@ nav h1 {
     margin-right: 5%;
     max-height: 450px;
     border-radius: 25px;
-    border-radius: 25px;
 }
 
 .projects .card .img-reverse {
@@ -502,8 +501,8 @@ nav h1 {
 
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 10px );
-    -webkit-backdrop-filter: blur( 10px );
+    backdrop-filter: blur( 10px ) opacity(0.1);
+    -webkit-backdrop-filter: blur( 10px ) opacity(0.1);
     border-radius: 25px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
@@ -530,8 +529,13 @@ nav h1 {
 }
 
 @media screen and (max-width: 1200px) {
+
+    * {
+        margin: 0;
+    }
+
     body {
-        max-width: 1200px;
+        width: 100%;
     }
     
     .hero-header {
@@ -577,26 +581,28 @@ nav h1 {
 
 @media screen and (max-width: 992px) {
 
-    nav {
-        position: relative;
+    * {
+        max-width: 100%;
+    }
+
+    section svg {
+        height: 100%;
         width: 100%;
-        margin-left: 8%;
+    }
+
+    nav {
+        width: 90%;
+        margin-left: 5%;
         margin-top: 3%;
-        display: inline-flex;
-        justify-content: space-between;
     }
 
     .hero-header {
-        position: relative;
-        width: 100%;
-        margin-left: 8%;
+        width: 90%;
+        margin-left: 5%;
         margin-top: 3%;
         padding: 3% 0%;
         max-height: 600px;
-        display: grid;
         grid-template-columns: 46% 0% 44%;
-        justify-content: space-between;
-        overflow: hidden;
     }
     
     .hero-header .left {
@@ -620,12 +626,12 @@ nav h1 {
 
     .course-info-cards {
         margin-top: 5%;
-        max-height: 150px;
-        width: 100%;
-        margin-left: 8%;
+        height: 75px;
+        width: 90%;
+        margin-left: 5%;
         padding-left: 8%;
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
+        justify-content: center;
+        align-content: center;
     }
 
     .course-info-cards .card {
@@ -643,14 +649,9 @@ nav h1 {
     }
     
     .course-job-explanation { 
-        min-width: 100%;
+        width: 90%;
         margin-top: 5%;
-        margin-left: 8%;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        justify-items: center;
-        align-content: center;
+        margin-left: 5%;
     }
 
     .course-job-explanation h1 {
@@ -663,12 +664,11 @@ nav h1 {
     }
 
     .for-whom {
-        position: relative;
         margin-top: 10%;
-        width: 100%;
-        padding: 0 10%;
-        display: grid;
-        overflow: visible;
+        width: 90%;
+        padding: 5% 10% 0% 10%;
+        justify-content: center;
+        align-content: center;
     }
     
     .for-whom h1 {
@@ -702,32 +702,28 @@ nav h1 {
     }
 
     .learning-outcomes {
-        position: relative;
         margin-top: 5%;
-        max-width: 100%;
-        width: 100%;
-        margin-left: 8%;
-        display: grid;
+        max-width: 90%;
+        width: 90%;
+        margin-left: 5%;
         grid-template-rows: 10% 90%;
     }
 
     .learning-outcomes .cards {
-        position: relative;
         width: 100%;
     }
 
     .learning-outcomes .cards .card {
         max-height: 70%;
-        width: 100%;
-        display: grid;
+        width: 90%;
         grid-template-rows: 33% 33% 33%;
     }
 
     .learning-process {
         margin-top: 5%;
-        max-width: 100%;
-        width: 100%;
-        margin-left: 8%;
+        max-width: 90%;
+        width: 90%;
+        margin-left: 5%;
     }
     
     .learning-process .card {
@@ -738,18 +734,13 @@ nav h1 {
     
     .learning-process > div {
         max-height: 100%;
-        display: inline-flex;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-        align-content: center;
         padding: 5% 5%;
     }
     
     .learning-process > div .card-text {
         display: grid;
         max-height: 40%;
-        max-width: 100%;
+        max-width: 90%;
     }
     
     .learning-process > div .card-text h4 {
@@ -774,18 +765,18 @@ nav h1 {
 
     .course-curriculum {
         margin-top: 5%;
-        width: 100%;
+        width: 90%;
         max-height: 100%;
-        margin-left: 8%;
+        margin-left: 5%;
         padding: 10%;
         display: grid;
     }
 
     .projects {
         margin-top: 0%;
-        max-width: 100%;
-        width: 100%;
-        margin-left: 8%;
+        max-width: 90%;
+        width: 90%;
+        margin-left: 5%;
     }
     
     .projects .card {
@@ -799,8 +790,8 @@ nav h1 {
 
     .faq-section {
         margin-top: 5%;
-        width: 100%;
-        margin-left: 8%;
+        width: 90%;
+        margin-left: 5%;
         padding: 10% 10% 10% 10%;
         display: grid;
     }
@@ -810,19 +801,518 @@ nav h1 {
     }
 
     .faq-section .card-content {
-        position: relative;
-        width: 100%;    
-        display: inline-flex;
-        justify-content: space-between;
+        width: 90%;    
         z-index: 1;
+    }
+
+    .faq-section .curriculum-card.active ul {
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        padding: 15px 0 75px 0;
     }
 
 }
 
 @media screen and (max-width: 767px) {
+    
+    section svg {
+        height: 100%;
+        width: 100%;
+    }
 
+    nav {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+
+    .hero-header {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 3%;
+        padding: 3% 0% 8% 0%;
+        max-height: 600px;
+        grid-template-columns: 100% 0 0;
+    }
+    
+    .hero-header .left {
+        padding: 25px 0px 0px 50px;
+        display: grid;
+        grid-template-rows: 20% 80%;
+    }
+
+    .hero-header .left h1 {
+        font-size: 22px;
+    }
+    
+    .hero-header .left h2 {
+        font-size: 18px;
+        font-weight: normal;
+    }
+    
+    .hero-header img {
+        display: none;
+    }
+
+    .course-info-cards {
+        margin-top: 5%;
+        height: 200px;
+        width: 90%;
+        margin-left: 5%;
+        padding-left: 8%;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .course-info-cards .card {
+        padding: 15px 15px;
+    }
+    
+    .course-info-cards .card h2 {
+        font-weight: 600;
+        font-size: 16px;
+    }
+    
+    .course-info-cards .card h3 {
+        font-weight: 400;
+        font-size: 12px;
+    }
+    
+    .course-job-explanation { 
+        width: 90%;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    .course-job-explanation h1 {
+        padding: 5%;
+        font-size: 20px;
+    }
+
+    .course-job-explanation h2 {
+        font-size: 18px;
+    }
+
+    .for-whom {
+        margin-top: 10%;
+        width: 90%;
+        padding: 5% 10% 0% 10%;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .for-whom h1 {
+        font-size: 28px;
+        font-weight: 700;
+    }
+    
+    .for-whom .cards {
+        padding: 5% 0%;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .for-whom .card {
+        padding: 50px 15px;
+    }
+    
+    .for-whom .card h2 {
+        font-weight: 600;
+        font-size: 20px;
+    }
+    
+    .for-whom .card h3 {
+        display: none;
+    }
+    
+    .for-whom .card img {
+        max-height: 125px;
+    }
+
+    .learning-outcomes {
+        margin-top: 5%;
+        max-width: 90%;
+        width: 90%;
+        margin-left: 5%;
+        grid-template-rows: 8% 92%;
+    }
+
+    .learning-outcomes .cards {
+        width: 100%;
+        padding-bottom: 8%;
+    }
+
+    .learning-outcomes .cards .card {
+        padding-top: 5%;
+        max-height: 70%;
+        width: 90%;
+        grid-template-rows: 33% 33% 33%;
+    }
+
+    .learning-process {
+        margin-top: 5%;
+        max-width: 90%;
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    .learning-process .card {
+        width: 100%;
+        max-height: 600px;
+        margin-top: 5%;
+    }
+    
+    .learning-process > div {
+        max-height: 100%;
+        padding: 5% 5%;
+    }
+    
+    .learning-process > div .card-text {
+        display: grid;
+        max-height: 40%;
+        max-width: 90%;
+    }
+    
+    .learning-process > div .card-text h4 {
+        padding: 5% 0;
+        font-weight: normal;
+    }
+    
+    .learning-process > div .card-text h2 {
+        padding: 5% 0;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    
+    .learning-process > div .card-text h3 {
+        display: none;
+    }
+
+    .learning-process .card img {
+        max-height: 250px;
+        border-radius: 25px;
+    }
+
+    .course-curriculum {
+        margin-top: 5%;
+        width: 90%;
+        max-height: 100%;
+        margin-left: 5%;
+        padding: 10%;
+        display: grid;
+    }
+
+    .projects {
+        margin-top: 5%;
+        max-width: 90%;
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    .projects .card {
+        max-height: 600px;
+        margin-top: 5%;
+    }
+
+    .projects .card img {
+        max-height: 250px;
+    }
+
+    .projects > div .card-text {
+        margin-right: 0%;
+    }
+
+    .faq-section {
+        margin-top: 5%;
+        width: 90%;
+        margin-left: 5%;
+        padding: 10% 10% 10% 10%;
+        display: grid;
+    }
+
+    .faq-section .curriculum-card {
+        padding: 5% 0%;
+    }
+
+    .faq-section .card-content {
+        width: 90%;    
+        z-index: 1;
+    }
+
+    .faq-section .curriculum-card.active ul {
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        padding: 15px 0 75px 0;
+    }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 650px) {
+
+    section svg {
+        height: 100%;
+        width: 100%;
+    }
+
+    nav {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+        justify-content: center;
+    }
+
+    nav h1 {
+        display: none;
+    }
+
+    .hero-header {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+        padding: 3% 0% 8% 0%;
+        max-height: 600px;
+        grid-template-columns: 100% 0 0;
+    }
+    
+    .hero-header .left {
+        padding: 25px 50px 25px 50px;
+        display: grid;
+        grid-template-rows: 20% 80%;
+    }
+
+    .hero-header .left h1 {
+        font-size: 22px;
+    }
+    
+    .hero-header .left h2 {
+        font-size: 18px;
+        font-weight: normal;
+    }
+    
+    .hero-header img {
+        display: none;
+    }
+
+    .course-info-cards {
+        margin-top: 5%;
+        height: 200px;
+        width: 90%;
+        margin-left: 5%;
+        padding-left: 8%;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .course-info-cards .card {
+        padding: 15px 15px;
+    }
+    
+    .course-info-cards .card h2 {
+        font-weight: 600;
+        font-size: 16px;
+    }
+    
+    .course-info-cards .card h3 {
+        font-weight: 400;
+        font-size: 12px;
+    }
+    
+    .course-job-explanation { 
+        width: 90%;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    .course-job-explanation h1 {
+        padding: 5%;
+        font-size: 20px;
+    }
+
+    .course-job-explanation h2 {
+        font-size: 18px;
+    }
+
+    .for-whom {
+        margin-top: 10%;
+        width: 90%;
+        padding: 5%;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .for-whom h1 {
+        margin-left: 10%;
+        font-size: 28px;
+        font-weight: 700;
+    }
+    
+    .for-whom .cards {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .for-whom .card {
+        padding: 50px 15px;
+    }
+    
+    .for-whom .card h2 {
+        font-weight: 600;
+        font-size: 20px;
+    }
+    
+    .for-whom .card h3 {
+        display: none;
+    }
+    
+    .for-whom .card img {
+        max-height: 125px;
+    }
+
+    .learning-outcomes {
+        margin-top: 5%;
+        max-width: 90%;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .learning-outcomes .cards {
+        width: 100%;
+        padding-bottom: 8%;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .learning-outcomes .cards .card {
+        padding-top: 5%;
+        max-height: 70%;
+        width: 90%;
+        grid-template-rows: 33% 33% 33%;
+    }
+
+    .learning-process {
+        margin-top: 5%;
+        max-width: 90%;
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    .learning-process .card {
+        width: 100%;
+        max-height: 600px;
+        margin-top: 5%;
+    }
+    
+    .learning-process > div {
+        max-height: 100%;
+        padding: 5% 5%;
+    }
+    
+    .learning-process > div .card-text {
+        display: grid;
+        max-height: 40%;
+        max-width: 90%;
+    }
+    
+    .learning-process > div .card-text h4 {
+        padding: 5% 0;
+        font-weight: normal;
+    }
+    
+    .learning-process > div .card-text h2 {
+        padding: 5% 0;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    
+    .learning-process > div .card-text h3 {
+        display: none;
+    }
+
+    .learning-process .card img {
+        max-height: 250px;
+        border-radius: 25px;
+    }
+
+    .course-curriculum {
+        margin-top: 5%;
+        width: 90%;
+        max-height: 100%;
+        margin-left: 5%;
+        padding: 10%;
+    }
+
+    .course-curriculum .header {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .course-curriculum .curriculum-details {
+        padding-top: 5%;
+    }
+
+    .projects {
+        margin-top: 5%;
+        max-width: 90%;
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    .projects .card {
+        max-height: 250px;
+        margin-top: 5%;
+    }
+
+    .projects .card img {
+        max-height: 150px;
+        padding: 0;
+    }
+
+    .projects .card-text {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
+    .projects .card .img-reverse {
+        margin-left: 0%;
+    }
+
+    .faq-section {
+        margin-top: 5%;
+        width: 90%;
+        margin-left: 5%;
+        padding: 10% 10% 10% 10%;
+        display: grid;
+    }
+
+    .faq-section .curriculum-card {
+        padding: 5% 0%;
+    }
+
+    .faq-section .card-content {
+        width: 90%;    
+        z-index: 1;
+        font-size: 12px;
+    }
+
+    .faq-section .card-content i {
+        right: -45px;
+    }
+
+    .faq-section .curriculum-card.active ul {
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        padding: 15px 0 75px 0;
+    }
 
 }

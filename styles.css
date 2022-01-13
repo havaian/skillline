@@ -1316,3 +1316,307 @@ nav h1 {
     }
 
 }
+
+@media screen and (max-width: 500px) {
+
+    section svg {
+        height: 100%;
+        width: 100%;
+    }
+
+    nav {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+        justify-content: center;
+    }
+
+    nav h1 {
+        display: none;
+    }
+
+    .hero-header {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+        padding: 3% 0% 8% 0%;
+        max-height: 600px;
+        grid-template-columns: 100% 0 0;
+    }
+    
+    .hero-header .left {
+        padding: 25px 50px 25px 50px;
+        display: grid;
+        grid-template-rows: 20% 80%;
+    }
+
+    .hero-header .left h1 {
+        font-size: 22px;
+    }
+    
+    .hero-header .left h2 {
+        font-size: 18px;
+        font-weight: normal;
+    }
+    
+    .hero-header img {
+        display: none;
+    }
+
+    .course-info-cards {
+        margin-top: 5%;
+        height: 200px;
+        width: 90%;
+        margin-left: 5%;
+        padding-left: 8%;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .course-info-cards .card {
+        padding: 15px 15px;
+    }
+    
+    .course-info-cards .card h2 {
+        font-weight: 600;
+        font-size: 16px;
+    }
+    
+    .course-info-cards .card h3 {
+        font-weight: 400;
+        font-size: 12px;
+    }
+    
+    .course-job-explanation { 
+        max-height: 150%;
+        width: 90%;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    .course-job-explanation h1 {
+        padding: 5%;
+        font-size: 20px;
+    }
+
+    .course-job-explanation h2 {
+        font-size: 18px;
+    }
+
+    .for-whom {
+        margin-top: 5%;
+        width: 90%;
+        padding: 5%;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .for-whom h1 {
+        position: absolute;
+        margin-top: 10%;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
+    .for-whom .cards {
+        margin-top: 10%;
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .for-whom .card {
+        padding: 50px 15px;
+    }
+    
+    .for-whom .card h2 {
+        font-weight: 600;
+        font-size: 20px;
+    }
+    
+    .for-whom .card h3 {
+        display: none;
+    }
+    
+    .for-whom .card img {
+        max-height: 125px;
+    }
+
+    .learning-outcomes {
+        margin-top: 5%;
+        max-width: 90%;
+        width: 90%;
+        margin-left: 5%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .learning-outcomes .cards {
+        margin-top: -10%;
+        width: 100%;
+        padding-bottom: 25%;
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .learning-outcomes .cards .card {
+        padding-top: 5%;
+        max-height: 70%;
+        width: 100%;
+        grid-template-rows: 33% 33% 33%;
+    }
+
+    .learning-outcomes h1 {
+        font-size: 24px;
+    }
+
+    .learning-process {
+        margin-top: 5%;
+        max-width: 90%;
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    .learning-process .card {
+        width: 100%;
+        max-height: 600px;
+        margin-top: 5%;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .learning-process > div {
+        max-height: 100%;
+        padding: 5% 5%;
+    }
+    
+    .learning-process > div .card-text {
+        display: grid;
+        max-height: 40%;
+        max-width: 90%;
+    }
+    
+    .learning-process > div .card-text h4 {
+        padding: 5% 0;
+        font-weight: normal;
+    }
+    
+    .learning-process > div .card-text h2 {
+        padding: 5% 0;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    
+    .learning-process > div .card-text h3 {
+        display: none;
+    }
+
+    .learning-process .card img {
+        display: none;
+    }
+
+    .course-curriculum {
+        margin-top: 5%;
+        width: 90%;
+        max-height: 100%;
+        margin-left: 5%;
+        padding: 10%;
+    }
+
+    .course-curriculum .header {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .course-curriculum .curriculum-details {
+        padding-top: 5%;
+    }
+
+    .course-curriculum .curriculum-card {
+        margin-top: 15%;
+    }
+
+    .course-curriculum .curriculum-card h2 {
+        max-width: 300px;
+    }
+
+    .projects {
+        margin-top: 5%;
+        max-width: 90%;
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    .projects .card {
+        max-height: 250px;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .projects .card img {
+        height: 0;
+        display: none;
+    }
+
+    .projects .card-text {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
+    .projects .card .img-reverse {
+        margin-left: 0%;
+    }
+
+    .faq-section {
+        margin-top: 5%;
+        width: 90%;
+        margin-left: 5%;
+        padding: 10% 10% 10% 10%;
+        display: grid;
+    }
+
+    .faq-section .curriculum-card {
+        padding: 5% 0%;
+    }
+
+    .faq-section .card-content {
+        width: 90%;    
+        z-index: 1;
+        font-size: 12px;
+    }
+
+    .faq-section .card-content i {
+        right: -45px;
+    }
+
+    .faq-section .curriculum-card.active ul {
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        padding: 15px 0 75px 0;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .course-curriculum .curriculum-details {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .course-curriculum .curriculum-card {
+        margin-top: 25%;
+    }
+
+    #month-1 {
+        padding-top: 25%;
+    }
+
+}

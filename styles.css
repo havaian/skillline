@@ -39,10 +39,67 @@ nav h1 {
     font-weight: normal;
 }
 
+.instructors {
+    margin-left: 5%;
+    margin-top: 3%;
+    padding: 5% 5% 10% 5%;
+    width: 90%;
+    max-height: 600px;
+
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px ) opacity(0.1);
+    -webkit-backdrop-filter: blur( 10px ) opacity(0.1);
+    border-radius: 25px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.instructors .header {
+    padding-bottom: 10%;
+}
+
+.instructors .header h2 {
+    font-size: 40px;
+}
+
+.instructor {
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: 50% 30%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.instructor img {
+    margin-top: -50px;
+    max-height: 300px;
+    filter: grayscale(1);
+    transition: filter 0.1s ease;
+}
+
+.instructor img:hover {
+    filter: grayscale(0);
+    transition: filter 0.1s ease;
+}
+
+.instructor-text {
+    margin-top: -25px;
+}
+
+.instructor-text h3 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.instructor-text h4 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
 .hero-header {
     width: 90%;
     margin-left: 5%;
-    margin-top: 3%;
+    margin-top: 5%;
     padding: 3% 0% 3% 3%;
     max-height: 600px;
     display: grid;
@@ -532,10 +589,11 @@ nav h1 {
 @media screen and (max-width: 1200px) {
 
     * {
-        margin: 0;
+        max-width: 100%;
     }
 
-    body {
+    section svg {
+        height: 100%;
         width: 100%;
     }
     
@@ -595,6 +653,16 @@ nav h1 {
         width: 90%;
         margin-left: 5%;
         margin-top: 3%;
+    }
+
+    .instructor {
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template-columns: 100%;
+    }
+
+    .instructor img {
+        display: none;
     }
 
     .hero-header {
@@ -827,6 +895,28 @@ nav h1 {
         width: 90%;
         margin-left: 5%;
         margin-top: 3%;
+    }
+
+    .instructor {
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template-columns: 100%;
+    }
+
+    .instructor img {
+        display: none;
+    }
+
+    .instructors .header h2 {
+        font-size: 36px;
+    }
+
+    .instructor .instructor-text h3 {
+        font-size: 24px;
+    }
+
+    .instructor .instructor-text h4 {
+        font-size: 22px;
     }
 
     .hero-header {
@@ -1334,6 +1424,19 @@ nav h1 {
 
     nav h1 {
         display: none;
+    }
+
+    .instructors .header h2 {
+        font-size: 30px;
+    }
+
+    .instructor .instructor-text h3 {
+        padding-top: 5%;
+        font-size: 20px;
+    }
+
+    .instructor .instructor-text h4 {
+        font-size: 18px;
     }
 
     .hero-header {

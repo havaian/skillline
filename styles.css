@@ -71,7 +71,7 @@ nav h1 {
 }
 
 .instructor img {
-    margin-top: -50px;
+    margin-top: -125px;
     max-height: 300px;
     filter: grayscale(1);
     transition: filter 0.1s ease;
@@ -596,7 +596,11 @@ nav h1 {
         height: 100%;
         width: 100%;
     }
-    
+
+    .instructor img {
+        margin-top: -100px;
+    }
+
     .hero-header {
         width: 90%;
         margin-left: 5%;

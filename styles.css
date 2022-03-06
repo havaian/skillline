@@ -439,29 +439,6 @@ nav h1 {
     transition: all 0.15s ease-in-out;
 }
 
-.curriculum-card::before {
-    position: absolute;
-    content: '';
-    left: 0;
-    top: -3%;
-    width: 100%;
-    height: 100%;
-    border-top: 1px solid white;
-    z-index: -1;
-}
-
-#curriculum-react::after,
-#last-faq-card::after {
-    position: absolute;
-    content: '';
-    left: 0;
-    bottom: -98%;
-    width: 100%;
-    height: 100%;
-    border-top: 1px solid white;
-    z-index: -1;
-}
-
 .curriculum-card h2 {
     font-weight: 500;
 }
@@ -559,7 +536,7 @@ nav h1 {
     margin-top: 5%;
     width: 90%;
     margin-left: 5%;
-    padding: 10% 10% 9% 10%;
+    padding: 5%;
     display: grid;
 
     background: rgba( 255, 255, 255, 0.25 );
@@ -570,15 +547,41 @@ nav h1 {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-.faq-section .card-content {
+.faq-card h2 {
+    font-weight: 500;
+    transition: all 0.15s ease-in-out;
+}
+
+.faq-card-content p {
+    padding: 0 0;
+    height: 0px;
+    display: none;
+    transition: all 0.15s ease-in-out;
+}
+
+.faq-card.active .faq-card-content p {
+    display: grid;
+    padding: 50px 0;
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+    transition: all 0.15s ease-in-out;
+}
+
+.faq-card.active .faq-card-content {
+    transition: all 0.15s ease-in-out;
+}
+
+.faq-card-content {
     position: relative;
     width: 100%;    
     display: inline-flex;
     justify-content: space-between;
     z-index: 1;
+    transition: all 0.15s ease-in-out;
 }
 
-.faq-section .card-content i {
+.faq-card i {
     position: absolute;
     right: 0;
     font-size: 22px;
@@ -586,7 +589,7 @@ nav h1 {
     transition: all 0.15s ease-in-out;
 }
 
-.curriculum-card.active i {
+.faq-card.active i {
     transform: rotateZ(-90deg);
     transition: all 0.15s ease-in-out;
 }
@@ -664,6 +667,10 @@ nav h1 {
         margin-top: 3%;
     }
 
+    .instructors {
+        padding: 7%;
+    }
+
     .instructor {
         display: grid;
         grid-auto-flow: dense;
@@ -679,6 +686,7 @@ nav h1 {
         margin-left: 5%;
         margin-top: 3%;
         padding: 3% 0%;
+        padding-bottom: 7%;
         max-height: 600px;
         grid-template-columns: 46% 0% 44%;
     }
@@ -699,15 +707,14 @@ nav h1 {
     }
     
     .hero-header img {
+        padding-top: 10%;
         max-height: 350px;
     }
 
     .course-info-cards {
         margin-top: 5%;
-        height: 75px;
+        height: 100px;
         width: 90%;
-        margin-left: 5%;
-        padding-left: 8%;
         justify-content: center;
         align-content: center;
     }
@@ -792,6 +799,7 @@ nav h1 {
     }
 
     .learning-outcomes .cards .card {
+        padding-top: 5%;
         max-height: 70%;
         width: 90%;
         grid-template-rows: 33% 33% 33%;
@@ -851,10 +859,18 @@ nav h1 {
     }
 
     .projects {
-        margin-top: 0%;
+        margin-top: 5%;
         max-width: 90%;
         width: 90%;
         margin-left: 5%;
+    }
+
+    .projects #card-1, #card-3, #card-5 {
+        padding-left: 15%;
+    }
+    
+    .projects #card-2, #card-4 {
+        padding-right: 15%;
     }
     
     .projects .card {
@@ -872,23 +888,6 @@ nav h1 {
         margin-left: 5%;
         padding: 10% 10% 10% 10%;
         display: grid;
-    }
-
-    .faq-section .curriculum-card {
-        padding: 5% 0%;
-    }
-
-    .faq-section .card-content {
-        width: 90%;    
-        z-index: 1;
-    }
-
-    .faq-section .curriculum-card.active ul {
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-        padding: 15px 0 75px 0;
     }
 
 }
@@ -1170,6 +1169,10 @@ nav h1 {
     nav h1 {
         display: none;
     }
+    
+    .instructors {
+        padding: 10%;
+    }
 
     .hero-header {
         width: 90%;
@@ -1355,8 +1358,12 @@ nav h1 {
         grid-template-columns: 100%;
     }
 
-    .course-curriculum .curriculum-details {
+    .curriculum-details {
         padding-top: 5%;
+    }
+
+    .curriculum-card h2 {
+        font-size: 20px;
     }
 
     .projects {
@@ -1393,26 +1400,8 @@ nav h1 {
         display: grid;
     }
 
-    .faq-section .curriculum-card {
-        padding: 5% 0%;
-    }
-
-    .faq-section .card-content {
-        width: 90%;    
-        z-index: 1;
-        font-size: 12px;
-    }
-
-    .faq-section .card-content i {
-        right: -45px;
-    }
-
-    .faq-section .curriculum-card.active ul {
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-        padding: 15px 0 75px 0;
+    .faq-card h2 {
+        font-size: 20px;
     }
 
 }
@@ -1433,6 +1422,10 @@ nav h1 {
 
     nav h1 {
         display: none;
+    }
+    
+    .instructors {
+        padding: 13%;
     }
 
     .instructors .header h2 {
@@ -1645,6 +1638,16 @@ nav h1 {
         display: grid;
         grid-template-columns: 100%;
     }
+    
+    .course-info-cards .card h2 {
+        font-weight: 600;
+        font-size: 16px;
+    }
+    
+    .course-info-cards .card h3 {
+        font-weight: 400;
+        font-size: 12px;
+    }
 
     .course-curriculum .curriculum-details {
         padding-top: 5%;
@@ -1693,43 +1696,72 @@ nav h1 {
         display: grid;
     }
 
-    .faq-section .curriculum-card {
-        padding: 5% 0%;
-    }
-
-    .faq-section .card-content {
-        width: 90%;    
-        z-index: 1;
-        font-size: 12px;
-    }
-
-    .faq-section .card-content i {
-        right: -45px;
-    }
-
-    .faq-section .curriculum-card.active ul {
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        align-items: center;
-        padding: 15px 0 75px 0;
+    .faq-card h2 {
+        max-width: 300px;
     }
 
 }
 
 @media screen and (max-width: 400px) {
+    
+    .instructors {
+        padding: 10%;
+    }
+
+    .hero-header {
+        padding: 0 5% 5% 0;
+    }
+
+    .hero-header .left {
+        padding: 10%;
+    }
+
+    .course-info-cards {
+        padding: 0 5% 0 0;
+        min-height: 200px;
+    }
+
+    .learning-outcomes .card:first-child {
+        margin-top: -50px;
+    }
+
+    .learning-outcomes .card {
+        margin-top: -100px;
+        height: 500px;
+    }
+
+    .learning-outcomes .card i {
+        margin-top: 25px;
+        margin-bottom: -50px;
+    }
 
     .course-curriculum .curriculum-details {
         padding-top: 10%;
         padding-bottom: 10%;
     }
 
+    .course-curriculum h2 {
+        width: 90%;
+    }
+
     .course-curriculum .curriculum-card {
-        margin-top: 25%;
+        margin-top: 10%;
+    }
+
+    .faq-card-content {
+        max-width: 300px;
     }
 
     #month-1 {
         padding-top: 25%;
+    }
+
+    .curriculum-card h2 {
+        font-size: 18px;
+    }
+
+    .faq-card h2 {
+        font-size: 18px;
     }
 
 }

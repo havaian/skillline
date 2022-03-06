@@ -643,7 +643,7 @@
 
         <div class="projects">
         
-            <div class="card">
+            <div class="card" id="card-1">
     
                 <div class="card-text">
                     <h2>Лендинг</h2>
@@ -653,7 +653,7 @@
     
             </div>
     
-            <div class="card">
+            <div class="card" id="card-2">
     
                 <img class="img-reverse" src="./pictures/projects-4.webp" alt="">
                 <div class="card-text" id="card-text-reverse-1">
@@ -663,7 +663,7 @@
     
             </div>
     
-            <div class="card">
+            <div class="card" id="card-3">
     
                 <div class="card-text">
                     <h2>Сайт для ресторана</h2>
@@ -673,7 +673,7 @@
     
             </div>
     
-            <div class="card">
+            <div class="card" id="card-4">
     
                 <img class="img-reverse" src="./pictures/projects-5.webp" alt="">
                 <div class="card-text" id="card-text-reverse-2">
@@ -683,7 +683,7 @@
     
             </div>
     
-            <div class="card">
+            <div class="card" id="card-5">
     
                 <div class="card-text">
                     <h2>И многое другое</h2>
@@ -701,69 +701,62 @@
 
         <div class="faq-section">
         
-            <div class="curriculum-card">
+            <div class="faq-card">
     
-                <div class="card-content">
+                <div class="faq-card-content">
     
                     <h2>Подойдет ли мне курс, если я новичок?</h2>
                     <i class="fal fa-chevron-down"></i>
     
                 </div>
-                <ul class="curriculum-card-content">
-                    <li class="content">
-                        <p>Да, вы узнаете структуру дизайн-проекта, получите практические навыки работы над дизайн-проектом.
-                            Кроме того, избежите ошибок и научитесь сразу делать дизайн-проект правильно. Получите ответы на свои вопросы от преподавателя</p>
-                    </li>
-                </ul>
+                <div class="faq-card-content">
+                    <p>Да, вы узнаете структуру дизайн-проекта, получите практические навыки работы над дизайн-проектом. Кроме того, избежите ошибок и научитесь сразу делать дизайн-проект правильно. Получите ответы на свои вопросы от преподавателя</p>
+                </div>
     
             </div>
     
-            <div class="curriculum-card">
+            <div class="faq-card">
     
-                <div class="card-content">
+                <div class="faq-card-content">
     
                     <h2>Сколько человек в группе?</h2>
                     <i class="fal fa-chevron-down"></i>
     
                 </div>
-                <ul class="curriculum-card-content">
-                    <li class="content">
-                        <p>В среднем 8-15 человек</p>
-                    </li>
-                </ul>
+                
+                <div class="faq-card-content">
+                    <p>В среднем 8-15 человек</p>
+                </div>
     
             </div>
     
-            <div class="curriculum-card">
+            <div class="faq-card">
     
-                <div class="card-content">
+                <div class="faq-card-content">
     
                     <h2>Какие требования для начала обучения?</h2>
                     <i class="fal fa-chevron-down"></i>
     
                 </div>
-                <ul class="curriculum-card-content">
-                    <li class="content">
-                        <p>От вас требуется только желание обучаться, об остальном мы позаботимся. 
-                            Для выполнения домашних заданий и дальнейшей работы вам также понадобится компьютер с установленным программным обеспечением</p>
-                    </li>
-                </ul>
+
+                <div class="faq-card-content">
+                    <p>От вас требуется только желание обучаться, об остальном мы позаботимся. Для выполнения домашних заданий и дальнейшей работы вам также понадобится компьютер с установленным программным обеспечением</p>
+                </div>
     
             </div>
     
-            <div class="curriculum-card" id="last-faq-card">
+            <div class="faq-card" id="last-faq-card">
     
-                <div class="card-content">
+                <div class="faq-card-content">
     
                     <h2>Возможна ли рассрочка?</h2>
                     <i class="fal fa-chevron-down"></i>
     
                 </div>
-                <ul class="curriculum-card-content">
-                    <li class="content">
-                        <p>Да. У нас есть рассрочка на 3, 6, 12 месяцев. Свяжитесь с нами и мы расскажем подробнее.</p>
-                    </li>
-                </ul>
+
+                <div class="faq-card-content">
+                    <p>Да. У нас есть рассрочка на 3, 6, 12 месяцев. Свяжитесь с нами и мы расскажем подробнее.</p>
+                </div>
     
             </div>
     
@@ -777,16 +770,6 @@
     
 </body>
 
-<script>
-
-const curriculumCards = document.querySelectorAll('.curriculum-card');
-
-for (let x = 0; x < curriculumCards.length; x++) {
-    curriculumCards[x].addEventListener('click', function (event) {
-        this.classList.toggle('active');
-    });
-}
-
-</script>
+<script src="app.js"></script>
 
 </html>
